@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.planmanagement.controllers.PlansController" 
+            prefWidth="900" prefHeight="600" styleClass="main-container">
+
+    <!-- Sidebar -->
+    <VBox fx:id="sidebar" spacing="10" layoutX="0" layoutY="0" prefWidth="200" prefHeight="600" 
+          styleClass="sidebar" alignment="TOP_CENTER">
+        <padding>
+            <Insets top="20" right="10" bottom="20" left="10"/>
+        </padding>
+        <Button text="Home" prefWidth="150" styleClass="sidebar-button" onAction="#handleHome"/>
+        <Button text="My Plans" prefWidth="150" styleClass="sidebar-button"/>
+        
+        <Region VBox.vgrow="ALWAYS"/>
+        <Button text="Logout" prefWidth="150" styleClass="logout-button" onAction="#handleLogout"/>
+    </VBox>
+
+    <!-- Main Content -->
+    <VBox spacing="20" layoutX="200" layoutY="0" prefWidth="700" prefHeight="600" styleClass="content-area">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+        <!-- Input Form -->
+        <VBox spacing="15" styleClass="form-container">
+            <HBox spacing="20" alignment="CENTER_LEFT">
+                <Label text="Plan:" styleClass="form-label"/>
+                <TextArea fx:id="planTextArea" prefWidth="400" prefHeight="100" wrapText="true"/>
+            </HBox>
+
+            <HBox spacing="20" alignment="CENTER_LEFT">
+                <Label text="Start Date:" styleClass="form-label"/>
+                <DatePicker fx:id="startDatePicker"/>
+                
+                <Label text="End Date:" styleClass="form-label"/>
+                <DatePicker fx:id="endDatePicker"/>
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Button text="Add" onAction="#handleAdd" styleClass="action-button"/>
+                <Button text="Update" onAction="#handleUpdate" styleClass="action-button"/>
+                <Button text="Clear" onAction="#handleClear" styleClass="action-button"/>
+                <Button text="Delete" onAction="#handleDelete" styleClass="action-button"/>
+                <Button text="Mark as Finished" onAction="#handleMarkAsFinished" styleClass="action-button"/>
+            </HBox>
+        </VBox>
+
+        <!-- Plans Table -->
+        <TableView fx:id="plansTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="planColumn" text="Plan" prefWidth="300"/>
+                <TableColumn fx:id="startDateColumn" text="Start Date" prefWidth="100"/>
+                <TableColumn fx:id="endDateColumn" text="End Date" prefWidth="100"/>
+                <TableColumn fx:id="dateCreatedColumn" text="Date Created" prefWidth="100"/>
+                <TableColumn fx:id="statusColumn" text="Status" prefWidth="80"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+</AnchorPane> 

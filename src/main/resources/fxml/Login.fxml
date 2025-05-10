@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.planmanagement.controllers.LoginController"
+      alignment="CENTER" spacing="20" styleClass="root">
+    
+    <VBox styleClass="login-container" alignment="CENTER" spacing="15">
+        <padding>
+            <Insets top="30" right="40" bottom="30" left="40"/>
+        </padding>
+
+        <Label text="MEMBER LOGIN" styleClass="login-title"/>
+
+        <HBox styleClass="input-container" alignment="CENTER_LEFT">
+            <ImageView styleClass="input-icon">
+                <Image url="@../images/user-icon.png"/>
+            </ImageView>
+            <TextField fx:id="usernameField" styleClass="login-field" promptText="Username"/>
+        </HBox>
+
+        <HBox styleClass="input-container" alignment="CENTER_LEFT">
+            <ImageView styleClass="input-icon">
+                <Image url="@../images/lock-icon.png"/>
+            </ImageView>
+            <PasswordField fx:id="passwordField" styleClass="login-field" promptText="Password"/>
+        </HBox>
+
+        
+
+        <Button text="LOGIN" onAction="#handleLogin" styleClass="login-button"/>
+    </VBox>
+</VBox> 

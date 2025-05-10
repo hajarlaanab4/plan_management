@@ -1,0 +1,309 @@
+/* General background */
+.root, .anchor-pane {
+    -fx-background-color: linear-gradient(to bottom right, #2c3e50, #4ca1af);
+}
+
+/* Title label */
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+/* Username label */
+.username-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4ca1af;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #ffffff;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4ca1af;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8 16 8 16;
+}
+.button:hover {
+    -fx-background-color: #357a8a;
+}
+
+/* TableView */
+.table-view {
+    -fx-background-color: #ffffffcc;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+.table-column {
+    -fx-alignment: CENTER-LEFT;
+}
+
+/* Main container */
+.main-container {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Sidebar */
+.sidebar {
+    -fx-background-color: #840f70;
+    -fx-padding: 20px;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #3d5843;
+}
+
+.logout-button {
+    -fx-background-color: #4a0740;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.logout-button:hover {
+    -fx-background-color: #630957;
+}
+
+/* Content area */
+.content-area {
+    -fx-background-color: white;
+    -fx-padding: 20px;
+}
+
+/* Welcome section */
+.welcome-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #840f70;
+    -fx-font-weight: bold;
+}
+
+.username-label {
+    -fx-font-size: 32px;
+    -fx-text-fill: #840f70;
+    -fx-font-weight: bold;
+}
+
+/* Cards */
+.card {
+    -fx-background-color: #f8f8f8;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);
+}
+
+.card-title {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.card-value {
+    -fx-font-size: 24px;
+    -fx-text-fill: #840f70;
+    -fx-font-weight: bold;
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+}
+
+.table-view .column-header {
+    -fx-background-color: #840f70;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f8f3f8;
+}
+
+.table-row-cell:even {
+    -fx-background-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e6d0e6;
+}
+
+/* General controls */
+.button {
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.text-field {
+    -fx-background-radius: 5px;
+    -fx-padding: 8px;
+}
+
+/* Form styling */
+.form-label {
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+/* Action buttons */
+.action-button {
+    -fx-background-color: #840f70;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-padding: 8 16 8 16;
+}
+
+.action-button:hover {
+    -fx-background-color: #a81591;
+}
+
+/* Form container styling */
+.form-container {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+    -fx-margin: 10px;
+}
+
+/* TextArea styling */
+.text-area {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #840f70;
+    -fx-border-width: 1px;
+    -fx-background-color: white;
+}
+
+.text-area:focused {
+    -fx-border-color: #a81591;
+    -fx-border-width: 2px;
+}
+
+/* DatePicker styling */
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #840f70;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.date-picker:focused {
+    -fx-border-color: #a81591;
+    -fx-border-width: 2px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #840f70;
+    -fx-background-radius: 0 5 5 0;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #a81591;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+/* Login page styling */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #4a0740, #840f70);
+}
+
+.login-container {
+    -fx-background-color: rgba(74, 7, 64, 0.8);
+    -fx-padding: 30px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0, 0, 0);
+    -fx-max-width: 400px;
+}
+
+.login-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 20px 0;
+}
+
+.input-container {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 5px;
+    -fx-padding: 5px 10px;
+    -fx-spacing: 10px;
+}
+
+.input-icon {
+    -fx-fit-width: 20px;
+    -fx-fit-height: 20px;
+    -fx-opacity: 0.7;
+}
+
+.login-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-font-size: 14px;
+    -fx-padding: 8px 0;
+}
+
+.login-field:focused {
+    -fx-background-color: transparent;
+}
+
+.remember-checkbox {
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+}
+
+.remember-checkbox .box {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: transparent;
+}
+
+.remember-checkbox:selected .box {
+    -fx-background-color: #a81591;
+}
+
+.forgot-password {
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-underline: false;
+}
+
+.forgot-password:hover {
+    -fx-text-fill: white;
+}
+
+.login-button {
+    -fx-background-color: white;
+    -fx-text-fill: #840f70;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 30px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-min-width: 150px;
+}
+
+.login-button:hover {
+    -fx-background-color: #f0f0f0;
+} 

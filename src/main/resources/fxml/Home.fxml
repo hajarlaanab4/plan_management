@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.planmanagement.controllers.HomeController" 
+            prefWidth="900" prefHeight="600" styleClass="main-container">
+
+    <!-- Sidebar -->
+    <VBox fx:id="sidebar" spacing="10" layoutX="0" layoutY="0" prefWidth="200" prefHeight="600" 
+          styleClass="sidebar" alignment="TOP_CENTER">
+        <padding>
+            <Insets top="20" right="10" bottom="20" left="10"/>
+        </padding>
+        <Button text="Home" prefWidth="150" styleClass="sidebar-button"/>
+        <Button text="My Plans" prefWidth="150" styleClass="sidebar-button" onAction="#handleMyPlans"/>
+        <Region VBox.vgrow="ALWAYS"/>
+        <Button text="Logout" prefWidth="150" styleClass="logout-button" onAction="#handleLogout"/>
+    </VBox>
+
+    <!-- Main Content -->
+    <VBox spacing="20" alignment="TOP_CENTER" layoutX="200" layoutY="0" prefWidth="700" prefHeight="600"
+          styleClass="content-area">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+        
+        <!-- Logo Image -->
+        <ImageView fitWidth="150" fitHeight="150" preserveRatio="true">
+            <image>
+                <Image url="@../images/OIP__1_-removebg-preview (1).png"/>
+            </image>
+        </ImageView>
+        
+        <!-- Welcome message in one line -->
+        <HBox spacing="5" alignment="CENTER">
+            <Label text="Welcome," styleClass="welcome-label"/>
+            <Label fx:id="usernameLabel" styleClass="username-label"/>
+        </HBox>
+        
+        <HBox spacing="50" alignment="CENTER">
+            <VBox spacing="10" alignment="CENTER" prefWidth="200" prefHeight="150" styleClass="card">
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+                <Label text="Date Registered:" styleClass="card-title"/>
+                <Label fx:id="dateRegisteredLabel" styleClass="card-value"/>
+            </VBox>
+
+            <VBox spacing="10" alignment="CENTER" prefWidth="200" prefHeight="150" styleClass="card">
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+                <Label text="Active Plans:" styleClass="card-title"/>
+                <Label fx:id="activePlansLabel" styleClass="card-value"/>
+            </VBox>
+
+            <VBox spacing="10" alignment="CENTER" prefWidth="200" prefHeight="150" styleClass="card">
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+                <Label text="Finished Plans:" styleClass="card-title"/>
+                <Label fx:id="finishedPlansLabel" styleClass="card-value"/>
+            </VBox>
+        </HBox>
+    </VBox>
+
+</AnchorPane> 
